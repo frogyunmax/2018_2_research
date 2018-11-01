@@ -168,7 +168,7 @@ print('정확도:', sess.run(accuracy, feed_dict = {X: test_input, Y: test_label
 result = sess.run(model, feed_dict = {X: test_input, Y: test_label, keep_prob : 1})
 #print(test_input)
 #각각 model 에서 얻은 결론값에 해당하는 한글 초성을 출력한다.
-#현재 index 0 = ㄱ 1 = ㄹ 2 = ㅍ 3 = ㅎ
+
 char = {0 : 'ㄱ', 1 : 'ㄴ', 2 : 'ㄷ', 3 : 'ㄹ', 4 : 'ㅁ', 5 : 'ㅂ', 6 : 'ㅅ', 7 : 'ㅇ', 8 : 'ㅈ', 9 : 'ㅊ', 10 : 'ㅋ',
         11 : 'ㅌ', 12 : 'ㅍ', 13 : 'ㅎ', 14 : 'ㅏ', 15 : 'ㅑ', 16 : 'ㅓ', 17 : 'ㅕ', 18 : 'ㅗ',
        19 : 'ㅛ', 20 : 'ㅜ', 21 : 'ㅠ', 22 : 'ㅡ', 23 : 'ㅣ', 24 : 'ㅐ', 25 : 'ㅒ', 26 : 'ㅔ', 27 : 'ㅖ', 28 : 'ㅢ',
