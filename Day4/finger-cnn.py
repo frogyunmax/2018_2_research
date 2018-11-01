@@ -155,7 +155,7 @@ for epoch in range(all_epoch):
         # 입력값 = batch_xs, 출력값 = batch_ys
 
         _, cost_val = sess.run([optimizer, cost], feed_dict={X: batch_xs, Y: batch_ys, keep_prob : 0.57})
-        # 최적화+손실값 저장, 입력값X와 평가할 때 쓸 실제값 Y를 넣어준다. 과적합방지 비율 = 70%
+        # 최적화+손실값 저장, 입력값X와 평가할 때 쓸 실제값 Y를 넣어준다. 과적합방지 비율 = 57%
         total_cost = total_cost + cost_val
         #오차값 구하기
     print('Epoch:', '%04d' % (epoch + 1), 'Avg. cost = ', '{:3f}'.format(total_cost / total_batch))
